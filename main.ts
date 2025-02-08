@@ -10,7 +10,20 @@ itme.DateTime(
 22
 )
 basic.forever(function () {
+    OLED.newLine()
+    OLED.writeNum(Math.round(itme.getMinute()))
+    basic.pause(1000)
+    OLED.clear()
+})
+basic.forever(function () {
+    OLED.newLine()
+    OLED.newLine()
     OLED.writeNum(Math.round(itme.getSecond()))
+    basic.pause(1000)
+    OLED.clear()
+})
+basic.forever(function () {
+    OLED.writeNum(Math.round(itme.getHour()))
     basic.pause(1000)
     OLED.clear()
 })
