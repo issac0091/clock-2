@@ -3,11 +3,11 @@ let itme = DS1302.create(DigitalPin.P13, DigitalPin.P14, DigitalPin.P15)
 itme.DateTime(
 2025,
 2,
-8,
-6,
-21,
-11,
-22
+9,
+7,
+10,
+42,
+44
 )
 basic.forever(function () {
     OLED.writeString("h：")
