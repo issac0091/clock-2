@@ -10,23 +10,19 @@ itme.DateTime(
 44
 )
 basic.forever(function () {
-    OLED.writeString("h：")
     OLED.writeNum(Math.round(itme.getHour()))
-    OLED.writeString("  ")
+    OLED.writeString("：")
     basic.pause(1000)
     OLED.clear()
 })
 basic.forever(function () {
-    OLED.writeString("min：")
     OLED.writeNum(Math.round(Math.round(itme.getMinute())))
-    OLED.writeString("  ")
+    OLED.writeString("：")
     basic.pause(1000)
     OLED.clear()
 })
 basic.forever(function () {
-    OLED.writeString("sec：")
     OLED.writeNum(Math.round(itme.getSecond()))
-    OLED.writeString("  ")
     basic.pause(1000)
     OLED.clear()
 })
