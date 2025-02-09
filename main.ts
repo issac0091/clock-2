@@ -11,13 +11,13 @@ itme.DateTime(
 )
 basic.forever(function () {
     OLED.writeNum(Math.round(itme.getHour()))
-    OLED.writeString("：")
+    OLED.writeString(":")
     basic.pause(1000)
     OLED.clear()
 })
 basic.forever(function () {
     OLED.writeNum(Math.round(Math.round(itme.getMinute())))
-    OLED.writeString("：")
+    OLED.writeString(":")
     basic.pause(1000)
     OLED.clear()
 })
